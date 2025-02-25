@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Film Database</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Search by title...">
+            <select id="sortSelect">
+                <option value="releaseYearAsc">Sort by Release Year (Ascending)</option>
+                <option value="releaseYearDesc">Sort by Release Year (Descending)</option>
+                <option value="boxOfficeAsc">Sort by Box Office (Ascending)</option>
+                <option value="boxOfficeDesc">Sort by Box Office (Descending)</option>
+            </select>
+            <button id="exportButton">Export to JSON</button>
+        </section>
+
+        <section class="film-list">
+            <ul id="filmList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Top Film Database</p>
+    </footer>
+    <script type="module" src="filmsFinal.json"></script>
+    <script src="script.js" type = "module" ></script>
+</body>
+</html>
